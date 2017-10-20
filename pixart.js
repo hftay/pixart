@@ -19,4 +19,8 @@ var createDivs = function (){
 	}
 };
 
-createDivs()
+createDivs();
+
+$body.on("click",function(event){
+	event.target.classList.add("green");
+})

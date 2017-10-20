@@ -27,3 +27,7 @@ h1 {
 body {
   background-image: url('ps_neutral.png');
 }
+
+.green {
+  background-color: green;
+}
