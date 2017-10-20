@@ -31,3 +31,12 @@ body {
 .green {
   background-color: green;
 }
+
+.poster {
+  width: 100px;
+  height: 100px;
+  margin: 15px auto;
+
+
+  background-size: 100px; 
+}
