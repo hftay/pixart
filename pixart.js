@@ -5,6 +5,7 @@ $brush = $('.brush');
 $body = $('body');
 
 
+
 $('#set-color').on('click', function(event){
 	event.preventDefault();
 	colorSpec = $colorField.val()
@@ -22,5 +23,11 @@ var createDivs = function (){
 createDivs();
 
 $body.on("click",function(event){
-	event.target.classList.add("green");
+	$eventTarget = $(event.target)	
+	if ($eventTarget.prop("class")==="square"){
+		// $eventTarget.addClass("green");
+		$eventTarget.prop("style").background = $colorField.val();
+
+		
+	}
 })
