@@ -2,6 +2,7 @@ console.log("pixel");
 
 $colorField = $('#color-field');
 $brush = $('.brush');
+$body = $('body');
 
 
 $('#set-color').on('click', function(event){
@@ -10,3 +11,12 @@ $('#set-color').on('click', function(event){
 	$brush.prop("style").background = colorSpec;
 	// console.log('color');
 })
+
+var createDivs = function (){
+	for(i=0; i<1000; i++){
+		$sqDiv = $('<div>').prop({ class: "square" });
+		$body.append($sqDiv);
+	}
+};
+
+createDivs()

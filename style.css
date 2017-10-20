@@ -11,6 +11,8 @@
   height: 10px;
   background: #E7E5DB;
   margin: 0;
+
+  border: 1px solid black;
 }
 
 h1 {
