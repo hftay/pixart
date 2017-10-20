@@ -22,12 +22,11 @@ var createDivs = function (){
 
 createDivs();
 
-$body.on("click",function(event){
+$body.on("mouseover",function(event){
 	$eventTarget = $(event.target)	
 	if ($eventTarget.prop("class")==="square"){
 		// $eventTarget.addClass("green");
 		$eventTarget.prop("style").background = $colorField.val();
 
-		
 	}
 })
